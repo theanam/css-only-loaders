@@ -1,0 +1,19 @@
+@keyframes rotateplane {
+  0% {
+    transform: perspective(var(--perspective-value)) rotateX(0deg) rotateY(0deg);
+  }
+  50% {
+    transform: perspective(var(--perspective-value)) rotateX(-180.1deg) rotateY(0deg);
+  }
+  100% {
+    transform: perspective(var(--perspective-value)) rotateX(-180deg) rotateY(-179.9deg);
+  }
+}
+
+.spinner.rotating-plane {
+  --perspective-value: calc(3 * var(--spinner-width));
+  width: var(--spinner-width);
+  height: var(--spinner-height);
+  background: var(--spinner-color-primary);
+  animation: rotateplane var(--animation-duration) infinite ease-in-out;
+}
