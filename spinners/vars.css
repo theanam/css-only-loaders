@@ -5,4 +5,5 @@ html{
     --spinner-color-secondary: #eee;
     --line-width: 4px;
     --animation-duration: 1s; 
+    --spinner-initial-scale: 0.1;
 }
