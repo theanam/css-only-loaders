@@ -1,0 +1,18 @@
+@keyframes blast{
+    0%{
+        opacity: var(--spinner-initial-scale,0.1);
+        transform: scale(var(--spinner-initial-scale,0.1));
+    }
+    100%{
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.spinner.blasting-circle{
+    width: var(--spinner-width,100);
+    height: var(--spinner-height),100;
+    border-radius: 50%;
+    background-color: var(--spinner-color-primary,#00f);
+    animation: blast var(--animation-duration,0.5s) infinite ease-out;
+}
