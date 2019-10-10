@@ -22,14 +22,22 @@
     height: var(--spinner-width, 100px);
 }
 
-.ripple div {
+.ripple::after {
+    content: "";
     position: absolute;
     border: var(--line-width, 4px) solid var(--spinner-color-primary, #00f);
     opacity: 1;
     border-radius: 50%;
     animation: blast-ripple var(--animation-duration, 0.5s) cubic-bezier(0, 0.2, 0.8, 1) infinite;
 }
-
-.ripple div:nth-child(2) {
-    animation-delay: -0.5s;
+.ripple::before {
+    top: calc(var(--spinner-width, 100px) / 2 - var(--line-width, 4px));
+    left: calc(var(--spinner-width, 100px) / 2 - var(--line-width, 4px));
+    content: "";
+    position: absolute;
+    border: var(--line-width, 4px) solid var(--spinner-color-primary, #00f);
+    opacity: 1;
+    border-radius: 50%;
+    animation: blast-ripple var(--animation-duration, 0.5s) cubic-bezier(0, 0.2, 0.8, 1) infinite;
+    animation-delay: calc(var(--animation-duration,0.5s) / 2);
 }
