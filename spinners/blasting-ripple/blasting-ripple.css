@@ -9,8 +9,8 @@
     100% {
         top: -1px;
         left: -1px;
-        width: calc(var(--spinner-width, 100px) - var(--line-width, 4px) );
-        height: calc(var(--spinner-width, 100px) - var(--line-width, 4px) );
+        width: calc(var(--spinner-width, 100px) - var(--line-width, 4px));
+        height: calc(var(--spinner-width, 100px) - var(--line-width, 4px));
         opacity: 0;
     }
 }
