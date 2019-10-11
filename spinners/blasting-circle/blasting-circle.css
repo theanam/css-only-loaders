@@ -1,3 +1,6 @@
+/*
+ Blasting Circle Styles
+*/
 @keyframes blast {
     0% {
         opacity: var(--spinner-initial-scale, 0.1);
