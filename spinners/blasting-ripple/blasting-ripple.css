@@ -1,3 +1,6 @@
+/*
+    Blasting Ripple Styles
+*/
 @keyframes blast-ripple {
     0% {
         top: calc(var(--spinner-width, 100px) / 2 - var(--line-width, 4px));
