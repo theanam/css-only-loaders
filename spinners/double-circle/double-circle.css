@@ -1,0 +1,31 @@
+.spinner.double-circle {
+    position: relative;
+    width: var(--spinner-width, 100px);
+    height: var(--spinner-height, 100px);
+}
+
+.double-circle::before,
+.double-circle::after{
+    content: '';
+    display: block;
+    position: absolute;
+    border-radius: 50%;
+    border: var(--line-width, 4px) solid transparent;
+    border-bottom-color: var(--spinner-color-primary, #33f);
+    animation: circle-spinner var(--animation-duration, 0.5s) infinite linear ;
+}
+
+.double-circle::before{
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+.double-circle::after{
+    width: calc(100% - 12px);
+    height: calc(100% - 12px);
+    top: 6px;
+    left: 6px;
+    animation-direction: reverse;
+}
