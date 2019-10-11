@@ -1,35 +1,11 @@
-@-webkit-keyframes momentum {
-    0%   {
-        -webkit-transform: rotate(0deg);  
-        -ms-transform: rotate(0deg);  
-        transform: rotate(0deg);  
-    }
-    100% {
-        -webkit-transform: rotate(-360deg);  
-        -ms-transform: rotate(-360deg);  
-        transform: rotate(-360deg);  
-    }
-}
-@keyframes momentum {
-    0%   {
-        -webkit-transform: rotate(0deg);  
-        -ms-transform: rotate(0deg);  
-        transform: rotate(0deg);  
-    }
-    100% {
-        -webkit-transform: rotate(-360deg);  
-        -ms-transform: rotate(-360deg);  
-        transform: rotate(-360deg);
-    }
-}
-
 .quantum-spinner {
-    display: inline-block;
+    display: inline-flex;
     left: 50%;
     top: 50%;
     width: 100px;
     height: 100px;
     border-radius: 50%;
+    margin: 25px 50px 95px 120px;
     border: 3px solid transparent;
     border-top-color: #28AD64;
     -webkit-animation: momentum 1.5s linear infinite; 
@@ -64,9 +40,27 @@
     animation: momentum 1.5s linear infinite; 
 }
 
-@media only screen and (min-width:320px) and (max-width:767px) {
-    .quantum-spinner {
-        display: block;
-        margin: auto;
+@-webkit-keyframes momentum {
+    0%   {
+        -webkit-transform: rotate(0deg);  
+        -ms-transform: rotate(0deg);  
+        transform: rotate(0deg);  
+    }
+    100% {
+        -webkit-transform: rotate(-360deg);  
+        -ms-transform: rotate(-360deg);  
+        transform: rotate(-360deg);  
+    }
+}
+@keyframes momentum {
+    0%   {
+        -webkit-transform: rotate(0deg);  
+        -ms-transform: rotate(0deg);  
+        transform: rotate(0deg);  
+    }
+    100% {
+        -webkit-transform: rotate(-360deg);  
+        -ms-transform: rotate(-360deg);  
+        transform: rotate(-360deg);
     }
 }
