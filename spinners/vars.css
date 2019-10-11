@@ -1,9 +1,9 @@
-html{
+html {
     --spinner-width: 100px;
     --spinner-height: 100px;
     --spinner-color-primary: #27ae60;
     --spinner-color-secondary: #eee;
     --line-width: 4px;
-    --animation-duration: 1s; 
+    --animation-duration: 1s;
     --spinner-initial-scale: 0.1;
 }
