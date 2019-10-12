@@ -1,4 +1,4 @@
-.box-rotation {
+.spinner.box-rotation {
   color: #1b5e20;
   height: 70px;
   width: 70px;
@@ -8,7 +8,7 @@
   animation: rect-rotate 1.2s  linear infinite; 
 }
 
-.box-rotation::after {
+.spinner.box-rotation::after {
   content: '';
   height: 0;
   width: inherit;
