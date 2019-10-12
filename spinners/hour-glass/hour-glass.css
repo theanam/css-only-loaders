@@ -1,0 +1,65 @@
+@keyframes slide {
+	0% {
+		transform: translateY(100%);
+	}
+	
+	25% {
+		transform: translateY(0%);
+	}
+	
+	50% {
+		transform: translateY(0%);
+	}
+	
+	75% {
+		transform: translateY(100%);		
+	}
+	
+	100% {
+		transform: translateY(100%);		
+	}
+}
+
+@keyframes spin {
+	0% {
+		transform: rotate(0deg);
+	}
+	
+	25% {
+		transform: rotate(0deg);
+	}
+	
+	50% {
+		transform: rotate(180deg);
+	}
+	
+	75% {
+		transform: rotate(180deg);
+	}
+	
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+.hour-glass {
+    position: relative;
+    width: var(--spinner-width, 100px);
+    height: var(--spinner-height, 100px);
+	background-color: var(--spinner-color-primary, #00f);
+	-webkit-clip-path: polygon(0% 0%, 100% 0%, 50% 50%, 100% 100%, 0% 100%, 50% 50%);
+	clip-path: polygon(0% 0%, 100% 0%, 50% 50%, 100% 100%, 0% 100%, 50% 50%);
+	overflow: hidden;
+	animation: spin var(--animation-duration, 4s) infinite ease-in-out;
+}
+
+.hour-glass:before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: var(--spinner-width, 100px);
+	height: 50%;
+	background-color: var(--spinner-color-secondary, #eee);
+	animation: slide var(--animation-duration, 4s) infinite ease-in-out;
+}
