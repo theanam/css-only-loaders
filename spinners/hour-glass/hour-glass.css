@@ -50,7 +50,7 @@
 	-webkit-clip-path: polygon(0% 0%, 100% 0%, 50% 50%, 100% 100%, 0% 100%, 50% 50%);
 	clip-path: polygon(0% 0%, 100% 0%, 50% 50%, 100% 100%, 0% 100%, 50% 50%);
 	overflow: hidden;
-	animation: spin var(--animation-duration, 4s) infinite ease-in-out;
+	animation: spin var(--animation-duration, 4s) infinite ease-in-out
 }
 
 .hour-glass:before {
@@ -61,5 +61,5 @@
 	width: var(--spinner-width, 100px);
 	height: 50%;
 	background-color: var(--spinner-color-secondary, #eee);
-	animation: slide var(--animation-duration, 4s) infinite ease-in-out;
+	animation: slide var(--animation-duration, 4s) infinite ease-in-out
 }
