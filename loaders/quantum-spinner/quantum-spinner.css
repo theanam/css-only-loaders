@@ -9,8 +9,8 @@
 }
 
 .loader.quantum-spinner {
-    --primary-circle-offset: calc(((var(--loader-width,100px) * 0.3) / 2) - (var(--line-width,4px) * 2));
-    --secondary-circle-offset: calc(((var(--loader-width,100px) * 0.5) / 2) - (var(--line-width,4px) * 2));
+    --primary-circle-offset: calc(((var(--loader-width,100px) * 0.2) / 2) - var(--line-width,4px));
+    --secondary-circle-offset: calc(((var(--loader-width,100px) * 0.4) / 2) - var(--line-width,4px)); /*- (var(--line-width,4px) * 2)*/
     position: relative;
     width: var(--loader-width, 100px);
     height: var(--loader-height, 100px);
@@ -27,8 +27,8 @@
     transform-origin: center center;
     top: var(--primary-circle-offset,10px);
     left: var(--primary-circle-offset,10px);
-    width: calc(var(--loader-width,100px) * 0.7);
-    height: calc(var(--loader-height,100px) * 0.7);
+    width: calc(var(--loader-width,100px) * 0.8);
+    height: calc(var(--loader-height,100px) * 0.8);
     border-radius: 50%;
     border: var(--line-width,4px) solid rgba(0,0,0,0);
     border-top-color: var(--loader-color-primary, #33f);
@@ -42,8 +42,8 @@
     position: absolute;
     top: var(--secondary-circle-offset,20px);
     left: var(--secondary-circle-offset,20px);
-    width: calc(var(--loader-width,100px) * 0.5);
-    height: calc(var(--loader-height,100px) * 0.5);
+    width: calc(var(--loader-width,100px) * 0.6);
+    height: calc(var(--loader-height,100px) * 0.6);
     border-radius: 50%;
     transform-origin: center center;
     border: var(--line-width,4px) solid rgba(0,0,0,0);

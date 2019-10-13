@@ -10,13 +10,10 @@ The loaders use CSS custom properties (variables) to control the attributes of t
     --animation-duration: 2s;
     --loader-initial-scale: 0.1;
 }
-.loader{
+.loader,.loader:before,.loader:after{
     box-sizing: border-box;
     flex-grow: 0;
     flex-shrink: 0;
-}
-.loader>*{
-    box-sizing: border-box;
 }
 /*
 In order to get optimal results, please only change the variables above and don't change anything in the actual loader code

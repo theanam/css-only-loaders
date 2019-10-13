@@ -10,10 +10,10 @@
 	margin: 100px;
 	cursor: pointer;
 	background: #fff;
-	flex: 1;
 }
 .loaders{
-	/* display: flex; */
+	display: flex;
+	flex-wrap: wrap;
 	/* justify-content: space-between; */
 }
 .sourceholder{
