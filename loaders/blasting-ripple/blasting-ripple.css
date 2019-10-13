@@ -3,8 +3,8 @@
 */
 @keyframes blast-ripple {
     0% {
-        top: calc(var(--spinner-height, 100px) / 2 - var(--line-width, 4px));
-        left: calc(var(--spinner-width, 100px) / 2 - var(--line-width, 4px));
+        top: calc(var(--loader-height, 100px) / 2 - var(--line-width, 4px));
+        left: calc(var(--loader-width, 100px) / 2 - var(--line-width, 4px));
         width: 0;
         height: 0;
         opacity: 1;
@@ -12,34 +12,34 @@
     100% {
         top: -1px;
         left: -1px;
-        width: calc(var(--spinner-width, 100px) - var(--line-width, 4px));
-        height: calc(var(--spinner-height, 100px) - var(--line-width, 4px));
+        width: calc(var(--loader-width, 100px) - var(--line-width, 4px));
+        height: calc(var(--loader-height, 100px) - var(--line-width, 4px));
         opacity: 0;
     }
 }
 
 .ripple.blasting-ripple {
     position: relative;
-    width: var(--spinner-width, 100px);
-    height: var(--spinner-height, 100px);
+    width: var(--loader-width, 100px);
+    height: var(--loader-height, 100px);
 }
 
 .ripple::after {
     opacity: 0;
     content: "";
     position: absolute;
-    border: var(--line-width, 4px) solid var(--spinner-color-primary, #00f);
+    border: var(--line-width, 4px) solid var(--loader-color-primary, #00f);
     opacity: 1;
     border-radius: 50%;
     animation: blast-ripple var(--animation-duration, 0.5s) cubic-bezier(0, 0.2, 0.8, 1) infinite;
 }
 .ripple::before {
     opacity: 0;
-    top: calc(var(--spinner-height, 100px) / 2 - var(--line-width, 4px));
-    left: calc(var(--spinner-width, 100px) / 2 - var(--line-width, 4px));
+    top: calc(var(--loader-height, 100px) / 2 - var(--line-width, 4px));
+    left: calc(var(--loader-width, 100px) / 2 - var(--line-width, 4px));
     content: "";
     position: absolute;
-    border: var(--line-width, 4px) solid var(--spinner-color-primary, #00f);
+    border: var(--line-width, 4px) solid var(--loader-color-primary, #00f);
     opacity: 1;
     border-radius: 50%;
     animation: blast-ripple var(--animation-duration, 0.5s) cubic-bezier(0, 0.2, 0.8, 1) infinite;

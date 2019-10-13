@@ -18,11 +18,11 @@
   }
 }
 
-.spinner.color-pulse-ball {
-  width: var(--spinner-width);
-  height: var(--spinner-height);
+.loader.color-pulse-ball {
+  width: var(--loader-width);
+  height: var(--loader-height);
   border-radius: 50%;
-  background-color: var(--spinner-color-primary, #00f);
+  background-color: var(--loader-color-primary, #00f);
   animation: colorpulse calc(6 * var(--animation-duration)) infinite ease-in-out,
     pulse var(--animation-duration) infinite ease;
 }

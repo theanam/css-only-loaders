@@ -1,4 +1,4 @@
-var baseURL = "https://raw.githubusercontent.com/theanam/css-only-loaders/master/spinners/";
+var baseURL = "https://raw.githubusercontent.com/theanam/css-only-loaders/master/loaders";
 var base_css = "";
 function getDefination(cssClass,callback){
 	$.get(`${baseURL}/${cssClass}/${cssClass}.css`)
@@ -16,7 +16,7 @@ function prepareSourceCode(data){
 	$(".actual-code").text(base_css + "\n\n" + data);
 }
 
-$(".spinner,.ripple").on("click",function(e){
+$(".loader,.ripple").on("click",function(e){
 	var classes = $(this).attr("class");
 	var defName = classes.split(" ")[1];
 	if(!defName) return console.log("Defination class missing");
