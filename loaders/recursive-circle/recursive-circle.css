@@ -1,0 +1,33 @@
+@keyframes rotate {
+    0% {
+      transform: rotate(0); 
+    }
+    100% {
+      transform: rotate(360deg); 
+    } 
+}
+
+.loader.recursive-circle {
+    height: var(--loader-height, 100px);
+    width: var(--loader-width, 100px);
+    color: var(--loader-color-primary, #33f);
+    display: inline-block;
+    position: relative;
+    border: var(--line-width, 4px) solid;
+    border-radius: 50%;
+    border-top-color: transparent;
+    animation: rotate var(--animation-duration, 1s)  linear infinite reverse; 
+}
+.loader.recursive-circle::after {
+      content: "";
+      height: 50%;
+      width: 50%;
+      display: block;
+      margin: 15px auto;
+      position: relative;
+      border: var(--line-width, 4px) solid;
+      border-radius: 50%;
+      border-top-color: transparent;
+      animation: rotate var(--animation-duration, 1s)  linear infinite reverse; 
+    }
+  
