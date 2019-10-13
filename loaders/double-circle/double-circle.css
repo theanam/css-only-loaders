@@ -12,7 +12,7 @@
     border-radius: 50%;
     border: var(--line-width, 4px) solid transparent;
     border-bottom-color: var(--loader-color-primary, #33f);
-    animation: circle-loader var(--animation-duration, 0.5s) infinite linear ;
+    animation: circle-loader var(--animation-duration, 1s) infinite linear ;
 }
 
 .double-circle::before{

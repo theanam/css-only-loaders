@@ -16,7 +16,7 @@ function prepareSourceCode(data){
 	$(".actual-code").text(base_css + "\n\n" + data);
 }
 
-$(".loader,.ripple").on("click",function(e){
+$(".loader").on("click",function(e){
 	var classes = $(this).attr("class");
 	var defName = classes.split(" ")[1];
 	if(!defName) return console.log("Defination class missing");
