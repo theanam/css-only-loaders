@@ -30,12 +30,15 @@ variables above and don't change anything in the actual loader code
 	`;
 }
 function getDefination(cssClass,callback){
+	$(".loadingindicator").css("display","flex");
 	$.get(`${baseURL}/${cssClass}/${cssClass}.css`)
 		.then(data=>{
 			callback(data);
+			$(".loadingindicator").css("display","none");
 		})
 		.catch(e=>{
 			console.log("CSS defination fetch error");
+			$(".loadingindicator").css("display","none");
 		});
 }
 
