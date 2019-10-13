@@ -16,5 +16,5 @@
     height: var(--loader-height, 100px);
     border-radius: 50%;
     background-color: var(--loader-color-primary, #00f);
-    animation: bounce var(--animation-duration, 0.5s) infinite ease-in-out;
+    animation: bounce var(--animation-duration, 1s) infinite ease-in-out;
 }

@@ -15,5 +15,5 @@
     width: var(--loader-width, 100px);
     height: var(--loader-height, 100px);
     background: var(--loader-color-primary, #00f);
-    animation: rotateplane var(--animation-duration, 0.5s) infinite ease-in-out;
+    animation: rotateplane var(--animation-duration, 1s) infinite ease-in-out;
 }

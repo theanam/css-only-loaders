@@ -2,15 +2,22 @@
 The loaders use CSS custom properties (variables) to control the attributes of the loaders
 */
 :root{
-    --loader-width: 100px;
-    --loader-height: 100px;
+    --loader-width: 80px;
+    --loader-height: 80px;
     --loader-color-primary: #27ae60;
     --loader-color-secondary: #eee;
-    --line-width: 4px;
+    --line-width: 3px;
     --animation-duration: 2s;
     --loader-initial-scale: 0.1;
 }
-
+.loader{
+    box-sizing: border-box;
+    flex-grow: 0;
+    flex-shrink: 0;
+}
+.loader>*{
+    box-sizing: border-box;
+}
 /*
 In order to get optimal results, please only change the variables above and don't change anything in the actual loader code
 */

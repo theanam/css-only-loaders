@@ -31,7 +31,7 @@
     border: var(--line-width, 4px) solid var(--loader-color-primary, #00f);
     opacity: 1;
     border-radius: 50%;
-    animation: blast-ripple var(--animation-duration, 0.5s) cubic-bezier(0, 0.2, 0.8, 1) infinite;
+    animation: blast-ripple var(--animation-duration, 1s) cubic-bezier(0, 0.2, 0.8, 1) infinite;
 }
 .loader.blasting-ripple::before {
     opacity: 0;
@@ -42,6 +42,6 @@
     border: var(--line-width, 4px) solid var(--loader-color-primary, #00f);
     opacity: 1;
     border-radius: 50%;
-    animation: blast-ripple var(--animation-duration, 0.5s) cubic-bezier(0, 0.2, 0.8, 1) infinite;
-    animation-delay: calc(var(--animation-duration,0.5s) / 2);
+    animation: blast-ripple var(--animation-duration, 1s) cubic-bezier(0, 0.2, 0.8, 1) infinite;
+    animation-delay: calc(var(--animation-duration,1s) / 2);
 }
