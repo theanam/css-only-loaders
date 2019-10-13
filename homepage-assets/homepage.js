@@ -66,22 +66,33 @@ $(".sourceholder").on("click",function(){
 });
 $(".size").on("mousemove change",function(){
 	let _size = $(this).val() || size;
-	size = _size;
+    size = _size;
+    $(".lsize").html(size);
 	document.querySelector(":root").style.setProperty("--loader-width",`${_size}px`);
 	document.querySelector(":root").style.setProperty("--loader-height",`${_size}px`);
 });
 $(".line").on("mousemove change",function(){
 	let _line = $(this).val() || line;
-	line = _line;
+    line = _line;
+    $(".lline").html(line);
 	document.querySelector(":root").style.setProperty("--line-width",`${_line}px`);
 });
 $(".dur").on("mousemove change",function(){
 	let _dur = $(this).val() || dur;
-	dur = _dur;
+    dur = _dur;
+    $(".ldur").html(dur);
 	document.querySelector(":root").style.setProperty("--animation-duration",`${_dur}s`);
 });
 $(".color").on("change",function(){
 	let _color = $(this).val() || color;
-	color = _color;
+    color = _color;
+    $(".lcolor").html(color);
 	document.querySelector(":root").style.setProperty("--loader-color-primary",_color);
+});
+
+$(function(){
+    $(".lcolor").html(color);
+    $(".ldur").html(dur);
+    $(".lline").html(line);
+    $(".lsize").html(size);
 });
