@@ -8,28 +8,26 @@
 }
 
 .loader.recursive-circle {
-    height: 70px;
-    width: 70px;
-    margin: 90px;
-    color: #2e7d32;
+    height: var(--loader-height, 100px);
+    width: var(--loader-width, 100px);
+    color: var(--loader-color-primary, #33f);
     display: inline-block;
     position: relative;
-    border: 4px solid;
+    border: var(--line-width, 4px) solid;
     border-radius: 50%;
     border-top-color: transparent;
-    animation: rotate 1s linear infinite reverse; 
+    animation: rotate var(--animation-duration, 1s)  linear infinite reverse; 
 }
 .loader.recursive-circle::after {
-      content: '';
+      content: "";
       height: 50%;
       width: 50%;
       display: block;
-      color: inherit;
       margin: 15px auto;
       position: relative;
-      border: 4px solid;
+      border: var(--line-width, 4px) solid;
       border-radius: 50%;
       border-top-color: transparent;
-      animation: rotate 1s linear infinite reverse; 
+      animation: rotate var(--animation-duration, 1s)  linear infinite reverse; 
     }
   
