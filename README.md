@@ -2,6 +2,9 @@
 
 loaders made with pure CSS and zero bulk. Will be converted to a react component once matured
 
+[![star this repo](http://githubbadges.com/star.svg?user=theanam&repo=css-only-loaders&style=default)](https://github.com/theanam/css-only-loaders)
+[![fork this repo](http://githubbadges.com/fork.svg?user=theanam&repo=css-only-loaders&style=default)](https://github.com/theanam/css-only-loaders/fork)
+
 **Readme still incomplete**
 
 > This is a work in progress. if you have a cool loader idea, please contribute

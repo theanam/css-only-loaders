@@ -22,8 +22,20 @@
     <link rel="stylesheet" href="loaders/recursive-circle/recursive-circle.css">
 </head>
 <body>
+    <div class="header">
+        <img src="homepage-assets/logo.svg" class="logo" alt="CSS Only Loader">
+        <div class="badges">
+            <!-- Place this tag where you want the button to render. -->
+            <a class="github-button" href="https://github.com/theanam/css-only-loaders" data-icon="octicon-star" data-show-count="true" aria-label="Star theanam/css-only-loaders on GitHub">Star</a>
+            <!-- Place this tag where you want the button to render. -->
+            <a class="github-button" href="https://github.com/theanam/css-only-loaders/fork" data-icon="octicon-repo-forked" data-show-count="true" aria-label="Fork theanam/css-only-loaders on GitHub">Fork</a>
+
+        </div>
+        <div class="instruction">
+            Click on any loader to view CSS code
+        </div>
+    </div>
     <div class="container">
-        <h1>Click on the loaders to see CSS Styles</h1>
         <div class="controls">
             <div class="control"><span>Loader Size (px):</span> <input class="size" value="70" type="range" min="50" max="200" step="20"></div>
             <div class="control"><span>Line width (px) :</span> <input class="line" value="3" type="range" min="1" max="20" step="1"></div>
@@ -44,14 +56,16 @@
             <div class="loader hour-glass"></div>
             <div class="loader recursive-circle"></div>
         </div>
-        <p>
-            <a href="https://github.com/theanam/css-only-loaders">🐔 View Source on Github</a>
-        </p>
-        <p>
-            To use the loaders from this project. see the <code>/loaders</code> folder for corresponding css file. 
-            All the attributes are in the <code>/loaders/values.css</code> file. you need to include that file before the loader CSS file.
-            see the source code to this file <code>/index.html</code> for example usage.
-        </p>
+        <div class="footer">
+            <!-- Place this tag where you want the button to render. -->
+            <a class="github-button" href="https://github.com/theanam" data-show-count="true" aria-label="Follow @theanam on GitHub">Follow @theanam</a>
+            <p class="usage-instructions">
+                To use the loaders from this project. see the <code>/loaders</code> folder for corresponding css file. 
+                All the attributes are in the <code>/loaders/values.css</code> file. you need to include that file before the loader CSS file.
+                see the source code to this file <code>/index.html</code> for example usage.
+            </p>
+        </div>
+        
         <div class="sourceholder">
             <div class="source">
                 <div>HTML Code:</div>
@@ -68,5 +82,7 @@
     </div>
     <script src="homepage-assets/jquery-3.4.1.min.js"></script>
     <script src="homepage-assets/homepage.js"></script>
+    <!-- Place this tag in your head or just before your close body tag. -->
+    <script async defer src="https://buttons.github.io/buttons.js"></script>
 </body>
 </html>

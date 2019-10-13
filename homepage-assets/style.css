@@ -5,11 +5,35 @@
 body{
 	font-family: sans-serif;
 }
+.header{
+    box-sizing: border-box;
+    padding: 40px var(--loader-width, 100px);
+}
+.logo{
+    height: 50px;
+}
+.badges{
+    margin-top: 1em;
+}
+.instruction{
+    padding: 0.2em 0.5em;
+    display: inline-block;
+    background: #222;
+    color: #fff;
+    border-radius: 0.2em;
+    margin-top: 1em;
+}
+.usage-instructions{
+    margin-top: 1em;
+    font-size: 0.9em;
+    color: #333;
+}
 .container{
 	padding:10px;
-	margin-top: 100px;
 }
-
+.footer{
+    padding: 40px var(--loader-width, 100px);
+}
 .loader{
 	display: inline-block;
 	margin: var(--loader-width,100px);
