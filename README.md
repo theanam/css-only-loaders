@@ -16,4 +16,5 @@ loaders made with pure CSS and zero bulk. Will be converted to a react component
 * Please make sure the folder name in the `loaders` folder, the css file name and the class name is the same. This is **Important** for the automatic defination loading to work.
 
 
+The Loader icon on the logo is taken from [Icofont](icofont.com)
  
