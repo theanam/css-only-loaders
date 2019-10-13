@@ -23,9 +23,12 @@
 <body>
     <div class="container">
         <h1>Click on the loaders to see CSS Styles</h1>
-        <p>
-            Homepage Under construction
-        </p>
+        <div class="controls">
+            <div class="control"><span>Loader Size (px):</span> <input class="size" value="70" type="range" min="50" max="200" step="20"></div>
+            <div class="control"><span>Line width (px) :</span> <input class="line" value="3" type="range" min="1" max="20" step="1"></div>
+            <div class="control"><span>Animation Duration (Seconds) :</span> <input class="dur" value="2" type="range" min="1" max="15" step="1"></div>
+            <div class="control"><span>loader Color:</span> <input class="color" type="color" value="#27ae60"></div>
+        </div>
         <div class="loaders">
             <div class="loader simple-circle"></div>
             <div class="loader blasting-circle"></div>

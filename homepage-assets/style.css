@@ -7,7 +7,9 @@ body{
 }
 .container{
 	padding:10px;
+	margin-top: 100px;
 }
+
 .loader{
 	display: inline-block;
 	margin: var(--loader-width,100px);
@@ -46,4 +48,25 @@ body{
 	color: #fff;
 	display: block;
 	overflow: scroll;
+}
+
+.controls{
+	position: fixed;
+	right: 0px;
+	padding: 10px;
+	top: 0px;
+	background: #fff;
+	z-index: 4000;
+}
+.control{
+	display: flex;
+	height: 1.3em;
+	padding: 0.3em;
+	align-items: center;
+}
+.control:nth-child(2n){
+	background-color: #eee;
+}
+.control span{
+	flex: 1;
 }

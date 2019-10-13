@@ -2,8 +2,8 @@
 The loaders use CSS custom properties (variables) to control the attributes of the loaders
 */
 :root{
-    --loader-width: 50px;
-    --loader-height: 50px;
+    --loader-width: 70px;
+    --loader-height: 70px;
     --loader-color-primary: #27ae60;
     --loader-color-secondary: #eee;
     --line-width: 3px;
