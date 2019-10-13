@@ -64,18 +64,18 @@ $(".source").on("click",function(e){
 $(".sourceholder").on("click",function(){
 	$(this).css("display","none");
 });
-$(".size").on("mousemove",function(){
+$(".size").on("mousemove change",function(){
 	let _size = $(this).val() || size;
 	size = _size;
 	document.querySelector(":root").style.setProperty("--loader-width",`${_size}px`);
 	document.querySelector(":root").style.setProperty("--loader-height",`${_size}px`);
 });
-$(".line").on("mousemove",function(){
+$(".line").on("mousemove change",function(){
 	let _line = $(this).val() || line;
 	line = _line;
 	document.querySelector(":root").style.setProperty("--line-width",`${_line}px`);
 });
-$(".dur").on("mousemove",function(){
+$(".dur").on("mousemove change",function(){
 	let _dur = $(this).val() || dur;
 	dur = _dur;
 	document.querySelector(":root").style.setProperty("--animation-duration",`${_dur}s`);
