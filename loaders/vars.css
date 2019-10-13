@@ -7,7 +7,7 @@ The loaders use CSS custom properties (variables) to control the attributes of t
     --loader-color-primary: #27ae60;
     --loader-color-secondary: #eee;
     --line-width: 4px;
-    --animation-duration: 1s;
+    --animation-duration: 2s;
     --loader-initial-scale: 0.1;
 }
 
