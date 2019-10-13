@@ -7,7 +7,7 @@
     }
 }
 
-.loader.circle {
+.loader.simple-circle {
     transform-origin: center center;
     /* Change the pixel amount to change the width of the loader */
     border: var(--line-width, 4px) solid var(--loader-color-primary, #33f);

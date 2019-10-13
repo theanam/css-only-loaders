@@ -18,13 +18,13 @@
     }
 }
 
-.ripple.blasting-ripple {
+.loader.blasting-ripple {
     position: relative;
     width: var(--loader-width, 100px);
     height: var(--loader-height, 100px);
 }
 
-.ripple::after {
+.loader.blasting-ripple::after {
     opacity: 0;
     content: "";
     position: absolute;
@@ -33,7 +33,7 @@
     border-radius: 50%;
     animation: blast-ripple var(--animation-duration, 0.5s) cubic-bezier(0, 0.2, 0.8, 1) infinite;
 }
-.ripple::before {
+.loader.blasting-ripple::before {
     opacity: 0;
     top: calc(var(--loader-height, 100px) / 2 - var(--line-width, 4px));
     left: calc(var(--loader-width, 100px) / 2 - var(--line-width, 4px));
