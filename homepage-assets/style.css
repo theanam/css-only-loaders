@@ -27,7 +27,7 @@ body{
 	left:0px;
 	top:0px;
 	position: fixed;
-	background: rgba(0,0,0,0.2);
+	background: rgba(0,0,0,0.5);
 	display: none;
 	z-index: 10000;
 	align-items: center;
@@ -82,4 +82,21 @@ code.html-code,code.actual-code{
 }
 .control span{
 	flex: 1;
+}
+.internalloader{
+	--animation-duration: 1s;
+	background: transparent !important;
+	pointer-events: none;
+}
+.loadingindicator{
+	display: none;
+	position: fixed;
+	top:0px;
+	left:0px;
+	background: rgba(0,0,0,0.5);
+	width: 100%;
+	height: 100%;
+	z-index: 30000;
+	align-items: center;
+	justify-content: center;
 }
