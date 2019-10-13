@@ -2,19 +2,22 @@
 	margin: 0;
 	padding: 0;
 }
+body{
+	font-family: sans-serif;
+}
 .container{
 	padding:10px;
 }
 .loader{
 	display: inline-block;
-	margin: 100px;
+	margin: var(--loader-width,100px);
 	cursor: pointer;
 	background: #fff;
 }
 .loaders{
 	display: flex;
 	flex-wrap: wrap;
-	/* justify-content: space-between; */
+	justify-content: space-between;
 }
 .sourceholder{
 	width:100%;
