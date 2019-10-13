@@ -1,0 +1,21 @@
+/*
+ Blasting Circle Styles
+*/
+@keyframes blast {
+    0% {
+        opacity: var(--loader-initial-scale, 0.1);
+        transform: scale(var(--loader-initial-scale, 0.1));
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.loader.blasting-circle {
+    width: var(--loader-width, 100px);
+    height: var(--loader-height, 100px);
+    border-radius: 50%;
+    background-color: var(--loader-color-primary, #00f);
+    animation: blast var(--animation-duration, 0.5s) infinite ease-out;
+}

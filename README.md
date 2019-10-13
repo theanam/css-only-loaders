@@ -1,6 +1,6 @@
-### CSS Only Spinners
+### CSS Only loaders
 
-Spinners made with pure CSS and zero bulk. Will be converted to a react component once matured
+loaders made with pure CSS and zero bulk. Will be converted to a react component once matured
 
 
-> This is a work in progress. if you have a cool spinner idea, please contribute
+> This is a work in progress. if you have a cool loader idea, please contribute

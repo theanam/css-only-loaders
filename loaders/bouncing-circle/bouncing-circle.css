@@ -10,11 +10,11 @@
     }
 }
 
-.spinner.bouncing-circle {
-    --bounce-height: calc(var(--spinner-height, 100px) / 5);
-    width: var(--spinner-width, 100px);
-    height: var(--spinner-height, 100px);
+.loader.bouncing-circle {
+    --bounce-height: calc(var(--loader-height, 100px) / 5);
+    width: var(--loader-width, 100px);
+    height: var(--loader-height, 100px);
     border-radius: 50%;
-    background-color: var(--spinner-color-primary, #00f);
+    background-color: var(--loader-color-primary, #00f);
     animation: bounce var(--animation-duration, 0.5s) infinite ease-in-out;
 }
