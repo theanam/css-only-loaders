@@ -5,26 +5,27 @@ var line    = 3;
 var dur     = 2;
 function getBaseCSS(){
 	return `
-	/*
-	The loaders use CSS custom properties (variables) to control the attributes of the loaders
-	*/
-	:root{
-		--loader-width: ${size}px;
-		--loader-height: ${size}px;
-		--loader-color-primary: ${color};
-		--loader-color-secondary: #eee;
-		--line-width: ${line}px;
-		--animation-duration: ${dur}s;
-		--loader-initial-scale: 0.1;
-	}
-	.loader,.loader:before,.loader:after{
-		box-sizing: border-box;
-		flex-grow: 0;
-		flex-shrink: 0;
-	}
-	/*
-	In order to get optimal results, please only change the variables above and don't change anything in the actual loader code
-	*/
+/*
+The loaders use CSS custom properties (variables) to control the attributes of the loaders
+*/
+:root{
+	--loader-width: ${size}px;
+	--loader-height: ${size}px;
+	--loader-color-primary: ${color};
+	--loader-color-secondary: #eee;
+	--line-width: ${line}px;
+	--animation-duration: ${dur}s;
+	--loader-initial-scale: 0.1;
+}
+.loader,.loader:before,.loader:after{
+	box-sizing: border-box;
+	flex-grow: 0;
+	flex-shrink: 0;
+}
+/*
+In order to get optimal results, please only change the 
+variables above and don't change anything in the actual loader code
+*/
 	
 	`;
 }
@@ -38,9 +39,9 @@ function getDefination(cssClass,callback){
 		});
 }
 
-function prepareSourceCode(data){
-	console.log(data);
+function prepareSourceCode(data,defName){
 	$(".sourceholder").css("display","flex");
+	$(".html-code").text(`<div class="loader ${defName}"></div>`);
 	$(".actual-code").text(getBaseCSS() + "\n\n" + data);
 }
 
@@ -49,7 +50,7 @@ $(".loader").on("click",function(e){
 	var defName = classes.split(" ")[1];
 	if(!defName) return console.log("Defination class missing");
 	getDefination(defName,function(data){
-		prepareSourceCode(data);
+		prepareSourceCode(data,defName);
 	});
 });
 
