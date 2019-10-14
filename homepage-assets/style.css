@@ -2,12 +2,15 @@
 	margin: 0;
 	padding: 0;
 }
+:root{
+    --side-margin: 60px;
+}
 body{
 	font-family: sans-serif;
 }
 .header{
     box-sizing: border-box;
-    padding: 40px var(--loader-width, 100px);
+    padding: 40px var(--side-margin, 60px);
 }
 .logo{
     height: 50px;
@@ -32,11 +35,11 @@ body{
 	padding:10px;
 }
 .footer{
-    padding: 40px var(--loader-width, 100px);
+    padding: 40px var(--side-margin, 60px);
 }
 .loader{
 	display: inline-block;
-	margin: var(--loader-width,100px);
+	margin: var(--side-margin,60px);
 	cursor: pointer;
 	background: #fff;
 }

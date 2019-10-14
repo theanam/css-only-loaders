@@ -1,0 +1,11 @@
+@media screen and (max-width:450px){
+    :root{
+        --side-margin: 20px;
+    }
+    .controls{
+        position: relative;
+    }
+    .logo{
+        height: 30px;
+    }
+}
