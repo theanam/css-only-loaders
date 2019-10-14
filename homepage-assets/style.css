@@ -4,6 +4,7 @@
 }
 :root{
     --side-margin: 60px;
+    --primary-blue: #2980b9;
 }
 body{
 	font-family: sans-serif;
@@ -61,9 +62,9 @@ body{
 	justify-content: center;
 }	
 .source{
-	width:70vw;
-	height:70vh;
-	background-color: #2980b9;
+	width:80vw;
+	height:80vh;
+	background-color: var(--primary-blue,#2980b9);
 	padding:20px;
 	z-index: 30000;
 	border-radius:4px;
@@ -76,11 +77,20 @@ body{
 	color: white;
 	padding: 5px;
 }
-.source .scroll-code{
-	flex:1;
-	overflow: scroll;
+textarea.html-code{
+    height: 1.1em;
 }
-code.html-code,code.actual-code{
+.copy{
+    display: inline-block;
+    padding: 0.1em 0.2em;
+    border: 1px solid white;
+    border-radius: 0.2em;
+    background: #fff;
+    color: var(--primary-blue, #2980b9);
+    margin-left: 0.5em;
+    cursor: pointer;
+}
+textarea.html-code,textarea.actual-code{
 	background: #222;
 	display: block;
 	overflow: scroll;
@@ -88,7 +98,11 @@ code.html-code,code.actual-code{
 	padding: 10px;
 	border-radius: 3px;
 	font-size: 12px;
-	margin: 0;
+    margin: 0;
+    border: none;
+}
+textarea.actual-code{
+    flex: 1;
 }
 .controls{
 	position: fixed;
