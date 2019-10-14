@@ -11,4 +11,9 @@
     .logo{
         height: 30px;
     }
+    .source{
+        padding: 5px;
+        height: 80vh;
+        width: 90vw;
+    }
 }

@@ -89,7 +89,12 @@ $(".color").on("change",function(){
     $(".lcolor").html(color);
 	document.querySelector(":root").style.setProperty("--loader-color-primary",_color);
 });
-
+$(".copy").on("click",function(){
+    let target = $(this).data('target');
+    let targetEl = $(`.${target}`);
+    targetEl.select();
+    document.execCommand("copy");
+})
 $(function(){
     $(".lcolor").html(color);
     $(".ldur").html(dur);
