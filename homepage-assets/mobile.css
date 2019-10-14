@@ -1,0 +1,14 @@
+@media screen and (max-width:450px){
+    :root{
+        --side-margin: 20px;
+    }
+    .header{
+        padding: var(--side-margin, 60px);
+    }
+    .controls{
+        position: relative;
+    }
+    .logo{
+        height: 30px;
+    }
+}
