@@ -64,7 +64,7 @@ module.exports =
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 5);
+/******/ 	return __webpack_require__(__webpack_require__.s = 15);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -219,7 +219,7 @@ var singleton = null;
 var	singletonCounter = 0;
 var	stylesInsertedAtTop = [];
 
-var	fixUrls = __webpack_require__(8);
+var	fixUrls = __webpack_require__(28);
 
 module.exports = function(list, options) {
 	if (typeof DEBUG !== "undefined" && DEBUG) {
@@ -558,7 +558,507 @@ function updateLink (link, options, obj) {
 /***/ (function(module, exports, __webpack_require__) {
 
 
-var content = __webpack_require__(6);
+var content = __webpack_require__(16);
+
+if(typeof content === 'string') content = [[module.i, content, '']];
+
+var transform;
+var insertInto;
+
+
+
+var options = {"hmr":true}
+
+options.transform = transform
+options.insertInto = undefined;
+
+var update = __webpack_require__(1)(content, options);
+
+if(content.locals) module.exports = content.locals;
+
+if(false) {
+	module.hot.accept("!!../../react/node_modules/css-loader/index.js!./blasting-circle.css", function() {
+		var newContent = require("!!../../react/node_modules/css-loader/index.js!./blasting-circle.css");
+
+		if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+
+		var locals = (function(a, b) {
+			var key, idx = 0;
+
+			for(key in a) {
+				if(!b || a[key] !== b[key]) return false;
+				idx++;
+			}
+
+			for(key in b) idx--;
+
+			return idx === 0;
+		}(content.locals, newContent.locals));
+
+		if(!locals) throw new Error('Aborting CSS HMR due to changed css-modules locals.');
+
+		update(newContent);
+	});
+
+	module.hot.dispose(function() { update(); });
+}
+
+/***/ }),
+/* 3 */
+/***/ (function(module, exports, __webpack_require__) {
+
+
+var content = __webpack_require__(17);
+
+if(typeof content === 'string') content = [[module.i, content, '']];
+
+var transform;
+var insertInto;
+
+
+
+var options = {"hmr":true}
+
+options.transform = transform
+options.insertInto = undefined;
+
+var update = __webpack_require__(1)(content, options);
+
+if(content.locals) module.exports = content.locals;
+
+if(false) {
+	module.hot.accept("!!../../react/node_modules/css-loader/index.js!./blasting-ripple.css", function() {
+		var newContent = require("!!../../react/node_modules/css-loader/index.js!./blasting-ripple.css");
+
+		if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+
+		var locals = (function(a, b) {
+			var key, idx = 0;
+
+			for(key in a) {
+				if(!b || a[key] !== b[key]) return false;
+				idx++;
+			}
+
+			for(key in b) idx--;
+
+			return idx === 0;
+		}(content.locals, newContent.locals));
+
+		if(!locals) throw new Error('Aborting CSS HMR due to changed css-modules locals.');
+
+		update(newContent);
+	});
+
+	module.hot.dispose(function() { update(); });
+}
+
+/***/ }),
+/* 4 */
+/***/ (function(module, exports, __webpack_require__) {
+
+
+var content = __webpack_require__(18);
+
+if(typeof content === 'string') content = [[module.i, content, '']];
+
+var transform;
+var insertInto;
+
+
+
+var options = {"hmr":true}
+
+options.transform = transform
+options.insertInto = undefined;
+
+var update = __webpack_require__(1)(content, options);
+
+if(content.locals) module.exports = content.locals;
+
+if(false) {
+	module.hot.accept("!!../../react/node_modules/css-loader/index.js!./box-rotation.css", function() {
+		var newContent = require("!!../../react/node_modules/css-loader/index.js!./box-rotation.css");
+
+		if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+
+		var locals = (function(a, b) {
+			var key, idx = 0;
+
+			for(key in a) {
+				if(!b || a[key] !== b[key]) return false;
+				idx++;
+			}
+
+			for(key in b) idx--;
+
+			return idx === 0;
+		}(content.locals, newContent.locals));
+
+		if(!locals) throw new Error('Aborting CSS HMR due to changed css-modules locals.');
+
+		update(newContent);
+	});
+
+	module.hot.dispose(function() { update(); });
+}
+
+/***/ }),
+/* 5 */
+/***/ (function(module, exports, __webpack_require__) {
+
+
+var content = __webpack_require__(19);
+
+if(typeof content === 'string') content = [[module.i, content, '']];
+
+var transform;
+var insertInto;
+
+
+
+var options = {"hmr":true}
+
+options.transform = transform
+options.insertInto = undefined;
+
+var update = __webpack_require__(1)(content, options);
+
+if(content.locals) module.exports = content.locals;
+
+if(false) {
+	module.hot.accept("!!../../react/node_modules/css-loader/index.js!./clock.css", function() {
+		var newContent = require("!!../../react/node_modules/css-loader/index.js!./clock.css");
+
+		if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+
+		var locals = (function(a, b) {
+			var key, idx = 0;
+
+			for(key in a) {
+				if(!b || a[key] !== b[key]) return false;
+				idx++;
+			}
+
+			for(key in b) idx--;
+
+			return idx === 0;
+		}(content.locals, newContent.locals));
+
+		if(!locals) throw new Error('Aborting CSS HMR due to changed css-modules locals.');
+
+		update(newContent);
+	});
+
+	module.hot.dispose(function() { update(); });
+}
+
+/***/ }),
+/* 6 */
+/***/ (function(module, exports, __webpack_require__) {
+
+
+var content = __webpack_require__(20);
+
+if(typeof content === 'string') content = [[module.i, content, '']];
+
+var transform;
+var insertInto;
+
+
+
+var options = {"hmr":true}
+
+options.transform = transform
+options.insertInto = undefined;
+
+var update = __webpack_require__(1)(content, options);
+
+if(content.locals) module.exports = content.locals;
+
+if(false) {
+	module.hot.accept("!!../../react/node_modules/css-loader/index.js!./color-pulse-ball.css", function() {
+		var newContent = require("!!../../react/node_modules/css-loader/index.js!./color-pulse-ball.css");
+
+		if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+
+		var locals = (function(a, b) {
+			var key, idx = 0;
+
+			for(key in a) {
+				if(!b || a[key] !== b[key]) return false;
+				idx++;
+			}
+
+			for(key in b) idx--;
+
+			return idx === 0;
+		}(content.locals, newContent.locals));
+
+		if(!locals) throw new Error('Aborting CSS HMR due to changed css-modules locals.');
+
+		update(newContent);
+	});
+
+	module.hot.dispose(function() { update(); });
+}
+
+/***/ }),
+/* 7 */
+/***/ (function(module, exports, __webpack_require__) {
+
+
+var content = __webpack_require__(21);
+
+if(typeof content === 'string') content = [[module.i, content, '']];
+
+var transform;
+var insertInto;
+
+
+
+var options = {"hmr":true}
+
+options.transform = transform
+options.insertInto = undefined;
+
+var update = __webpack_require__(1)(content, options);
+
+if(content.locals) module.exports = content.locals;
+
+if(false) {
+	module.hot.accept("!!../../react/node_modules/css-loader/index.js!./double-circle.css", function() {
+		var newContent = require("!!../../react/node_modules/css-loader/index.js!./double-circle.css");
+
+		if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+
+		var locals = (function(a, b) {
+			var key, idx = 0;
+
+			for(key in a) {
+				if(!b || a[key] !== b[key]) return false;
+				idx++;
+			}
+
+			for(key in b) idx--;
+
+			return idx === 0;
+		}(content.locals, newContent.locals));
+
+		if(!locals) throw new Error('Aborting CSS HMR due to changed css-modules locals.');
+
+		update(newContent);
+	});
+
+	module.hot.dispose(function() { update(); });
+}
+
+/***/ }),
+/* 8 */
+/***/ (function(module, exports, __webpack_require__) {
+
+
+var content = __webpack_require__(22);
+
+if(typeof content === 'string') content = [[module.i, content, '']];
+
+var transform;
+var insertInto;
+
+
+
+var options = {"hmr":true}
+
+options.transform = transform
+options.insertInto = undefined;
+
+var update = __webpack_require__(1)(content, options);
+
+if(content.locals) module.exports = content.locals;
+
+if(false) {
+	module.hot.accept("!!../../react/node_modules/css-loader/index.js!./hour-glass.css", function() {
+		var newContent = require("!!../../react/node_modules/css-loader/index.js!./hour-glass.css");
+
+		if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+
+		var locals = (function(a, b) {
+			var key, idx = 0;
+
+			for(key in a) {
+				if(!b || a[key] !== b[key]) return false;
+				idx++;
+			}
+
+			for(key in b) idx--;
+
+			return idx === 0;
+		}(content.locals, newContent.locals));
+
+		if(!locals) throw new Error('Aborting CSS HMR due to changed css-modules locals.');
+
+		update(newContent);
+	});
+
+	module.hot.dispose(function() { update(); });
+}
+
+/***/ }),
+/* 9 */
+/***/ (function(module, exports, __webpack_require__) {
+
+
+var content = __webpack_require__(23);
+
+if(typeof content === 'string') content = [[module.i, content, '']];
+
+var transform;
+var insertInto;
+
+
+
+var options = {"hmr":true}
+
+options.transform = transform
+options.insertInto = undefined;
+
+var update = __webpack_require__(1)(content, options);
+
+if(content.locals) module.exports = content.locals;
+
+if(false) {
+	module.hot.accept("!!../../react/node_modules/css-loader/index.js!./quantum-spinner.css", function() {
+		var newContent = require("!!../../react/node_modules/css-loader/index.js!./quantum-spinner.css");
+
+		if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+
+		var locals = (function(a, b) {
+			var key, idx = 0;
+
+			for(key in a) {
+				if(!b || a[key] !== b[key]) return false;
+				idx++;
+			}
+
+			for(key in b) idx--;
+
+			return idx === 0;
+		}(content.locals, newContent.locals));
+
+		if(!locals) throw new Error('Aborting CSS HMR due to changed css-modules locals.');
+
+		update(newContent);
+	});
+
+	module.hot.dispose(function() { update(); });
+}
+
+/***/ }),
+/* 10 */
+/***/ (function(module, exports, __webpack_require__) {
+
+
+var content = __webpack_require__(24);
+
+if(typeof content === 'string') content = [[module.i, content, '']];
+
+var transform;
+var insertInto;
+
+
+
+var options = {"hmr":true}
+
+options.transform = transform
+options.insertInto = undefined;
+
+var update = __webpack_require__(1)(content, options);
+
+if(content.locals) module.exports = content.locals;
+
+if(false) {
+	module.hot.accept("!!../../react/node_modules/css-loader/index.js!./recursive-circle.css", function() {
+		var newContent = require("!!../../react/node_modules/css-loader/index.js!./recursive-circle.css");
+
+		if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+
+		var locals = (function(a, b) {
+			var key, idx = 0;
+
+			for(key in a) {
+				if(!b || a[key] !== b[key]) return false;
+				idx++;
+			}
+
+			for(key in b) idx--;
+
+			return idx === 0;
+		}(content.locals, newContent.locals));
+
+		if(!locals) throw new Error('Aborting CSS HMR due to changed css-modules locals.');
+
+		update(newContent);
+	});
+
+	module.hot.dispose(function() { update(); });
+}
+
+/***/ }),
+/* 11 */
+/***/ (function(module, exports, __webpack_require__) {
+
+
+var content = __webpack_require__(25);
+
+if(typeof content === 'string') content = [[module.i, content, '']];
+
+var transform;
+var insertInto;
+
+
+
+var options = {"hmr":true}
+
+options.transform = transform
+options.insertInto = undefined;
+
+var update = __webpack_require__(1)(content, options);
+
+if(content.locals) module.exports = content.locals;
+
+if(false) {
+	module.hot.accept("!!../../react/node_modules/css-loader/index.js!./rotating-plane.css", function() {
+		var newContent = require("!!../../react/node_modules/css-loader/index.js!./rotating-plane.css");
+
+		if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+
+		var locals = (function(a, b) {
+			var key, idx = 0;
+
+			for(key in a) {
+				if(!b || a[key] !== b[key]) return false;
+				idx++;
+			}
+
+			for(key in b) idx--;
+
+			return idx === 0;
+		}(content.locals, newContent.locals));
+
+		if(!locals) throw new Error('Aborting CSS HMR due to changed css-modules locals.');
+
+		update(newContent);
+	});
+
+	module.hot.dispose(function() { update(); });
+}
+
+/***/ }),
+/* 12 */
+/***/ (function(module, exports, __webpack_require__) {
+
+
+var content = __webpack_require__(26);
 
 if(typeof content === 'string') content = [[module.i, content, '']];
 
@@ -604,11 +1104,11 @@ if(false) {
 }
 
 /***/ }),
-/* 3 */
+/* 13 */
 /***/ (function(module, exports, __webpack_require__) {
 
 
-var content = __webpack_require__(7);
+var content = __webpack_require__(27);
 
 if(typeof content === 'string') content = [[module.i, content, '']];
 
@@ -654,25 +1154,50 @@ if(false) {
 }
 
 /***/ }),
-/* 4 */
+/* 14 */
 /***/ (function(module, exports) {
 
 module.exports = require("react");
 
 /***/ }),
-/* 5 */
+/* 15 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-var _react = __webpack_require__(4);
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+exports.Loader = undefined;
+
+var _react = __webpack_require__(14);
 
 var _react2 = _interopRequireDefault(_react);
 
-__webpack_require__(3);
+__webpack_require__(13);
+
+__webpack_require__(12);
+
+__webpack_require__(11);
 
 __webpack_require__(2);
+
+__webpack_require__(3);
+
+__webpack_require__(4);
+
+__webpack_require__(5);
+
+__webpack_require__(6);
+
+__webpack_require__(7);
+
+__webpack_require__(8);
+
+__webpack_require__(9);
+
+__webpack_require__(10);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -681,8 +1206,150 @@ function Loader(props) {
     return _react2.default.createElement("div", { className: "loader " + type });
 }
 
+exports.Loader = Loader;
+
 /***/ }),
-/* 6 */
+/* 16 */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(0)(false);
+// imports
+
+
+// module
+exports.push([module.i, "/*\n Blasting Circle Styles\n*/\n@keyframes blast {\n    0% {\n        opacity: var(--loader-initial-scale, 0.1);\n        transform: scale(var(--loader-initial-scale, 0.1));\n    }\n    100% {\n        transform: scale(1);\n        opacity: 1;\n    }\n}\n\n.loader.blasting-circle {\n    width: var(--loader-width, 100px);\n    height: var(--loader-height, 100px);\n    border-radius: 50%;\n    background-color: var(--loader-color-primary, #00f);\n    animation: blast var(--animation-duration, 1s) infinite ease-out;\n}", ""]);
+
+// exports
+
+
+/***/ }),
+/* 17 */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(0)(false);
+// imports
+
+
+// module
+exports.push([module.i, "/*\n    Blasting Ripple Styles\n*/\n@keyframes blast-ripple {\n    0% {\n        top: calc(var(--loader-height, 100px) / 2 - var(--line-width, 4px));\n        left: calc(var(--loader-width, 100px) / 2 - var(--line-width, 4px));\n        width: 0;\n        height: 0;\n        opacity: 1;\n    }\n    100% {\n        top: -1px;\n        left: -1px;\n        width: calc(var(--loader-width, 100px) - var(--line-width, 4px));\n        height: calc(var(--loader-height, 100px) - var(--line-width, 4px));\n        opacity: 0;\n    }\n}\n\n.loader.blasting-ripple {\n    position: relative;\n    width: var(--loader-width, 100px);\n    height: var(--loader-height, 100px);\n}\n\n.loader.blasting-ripple::after {\n    opacity: 0;\n    content: \"\";\n    position: absolute;\n    border: var(--line-width, 4px) solid var(--loader-color-primary, #00f);\n    opacity: 1;\n    border-radius: 50%;\n    animation: blast-ripple var(--animation-duration, 1s) cubic-bezier(0, 0.2, 0.8, 1) infinite;\n}\n.loader.blasting-ripple::before {\n    opacity: 0;\n    top: calc(var(--loader-height, 100px) / 2 - var(--line-width, 4px));\n    left: calc(var(--loader-width, 100px) / 2 - var(--line-width, 4px));\n    content: \"\";\n    position: absolute;\n    border: var(--line-width, 4px) solid var(--loader-color-primary, #00f);\n    opacity: 1;\n    border-radius: 50%;\n    animation: blast-ripple var(--animation-duration, 1s) cubic-bezier(0, 0.2, 0.8, 1) infinite;\n    animation-delay: calc(var(--animation-duration,1s) / 2);\n}", ""]);
+
+// exports
+
+
+/***/ }),
+/* 18 */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(0)(false);
+// imports
+
+
+// module
+exports.push([module.i, "@keyframes rect-rotate {\n  0% {\n    transform: rotate(0); \n  }\n  50%, 100% {\n    transform: rotate(360deg); \n  } \n}\n\n@keyframes fill-rect {\n  0%, 50% {\n    height: 0px; \n  }\n  100% {\n    \n    height: inherit; \n  } \n}\n\n.loader.box-rotation {\n  transform-origin: center center;\n  color: var(--loader-color-primary, #33f);\n  width: var(--loader-width, 100px);\n  height: var(--loader-height, 100px);\n  position: relative;\n  border: var(--line-width, 4px) solid;\n  display: inline-block;\n  animation: rect-rotate var(--animation-duration, 1s)  linear infinite; \n}\n\n.loader.box-rotation::after {\n  content: \"\";\n  height: 0px;\n  width: 100%;\n  height:100%;\n  display: block;\n  background: var(--loader-color-primary, #33f);\n  opacity: 0.5;\n  animation: fill-rect var(--animation-duration, 1s) linear infinite; \n}\n", ""]);
+
+// exports
+
+
+/***/ }),
+/* 19 */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(0)(false);
+// imports
+
+
+// module
+exports.push([module.i, ".loader.clock {\n    position: relative;\n    width: var(--loader-width, 100px);\n    height: var(--loader-height, 100px);\n    border-radius: 50%;\n    border: var(--line-width, 4px) solid var(--loader-color-primary, #33f);\n}\n\n.loader.clock::before{\n    content: '';\n    position: absolute;\n    top: 8px;    \n    left: calc(50% - 2px);\n    background: var(--loader-color-primary, #33f);\n    width: var(--line-width, 4px);\n    height: calc( 50% - 8px );\n    border-radius: calc(var(--line-width, 4px) + 1);\n    transform-origin: 50% 100%;\n    animation: circle-loader var(--animation-duration,1s) infinite linear ;\n}", ""]);
+
+// exports
+
+
+/***/ }),
+/* 20 */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(0)(false);
+// imports
+
+
+// module
+exports.push([module.i, "@keyframes colorpulse {\n  0% {\n    filter: hue-rotate(0deg);\n  }\n  100% {\n    filter: hue-rotate(359.9deg);\n  }\n}\n\n@keyframes pulse {\n  0%, 1% {\n    opacity: 1;\n    transform: scale(0.1);\n  }\n  100% {\n    opacity: 0;\n    transform: scale(1);\n  }\n}\n\n.loader.color-pulse-ball {\n  width: var(--loader-width, 100px);\n  height: var(--loader-height, 100px);\n  border-radius: 50%;\n  background-color: var(--loader-color-primary, #00f);\n  animation: colorpulse calc(3 * var(--animation-duration,1s)) infinite ease-in-out,\n    pulse var(--animation-duration,1s) infinite ease;\n}\n", ""]);
+
+// exports
+
+
+/***/ }),
+/* 21 */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(0)(false);
+// imports
+
+
+// module
+exports.push([module.i, ".loader.double-circle {\n    position: relative;\n    width: var(--loader-width, 100px);\n    height: var(--loader-height, 100px);\n}\n\n.double-circle::before,\n.double-circle::after{\n    content: '';\n    display: block;\n    position: absolute;\n    border-radius: 50%;\n    border: var(--line-width, 4px) solid transparent;\n    border-bottom-color: var(--loader-color-primary, #33f);\n    animation: circle-loader var(--animation-duration, 1s) infinite linear ;\n}\n\n.double-circle::before{\n    width: 100%;\n    height: 100%;\n    top: 0;\n    left: 0;\n}\n\n.double-circle::after{\n    width: calc(100% - 12px);\n    height: calc(100% - 12px);\n    top: 6px;\n    left: 6px;\n    animation-direction: reverse;\n}", ""]);
+
+// exports
+
+
+/***/ }),
+/* 22 */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(0)(false);
+// imports
+
+
+// module
+exports.push([module.i, "@keyframes slide {\n\t0% {\n\t\ttransform: translateY(100%);\n\t}\n\n\t25% {\n\t\ttransform: translateY(0%);\n\t}\n\n\t50% {\n\t\ttransform: translateY(0%);\n\t}\n\n\t75% {\n\t\ttransform: translateY(100%);\t\t\n\t}\n\n\t100% {\n\t\ttransform: translateY(100%);\t\t\n\t}\n}\n\n@keyframes spin {\n\t0% {\n\t\ttransform: rotate(0deg);\n\t}\n\n\t25% {\n\t\ttransform: rotate(0deg);\n\t}\n\n\t50% {\n\t\ttransform: rotate(180deg);\n\t}\n\n\t75% {\n\t\ttransform: rotate(180deg);\n\t}\n\n\t100% {\n\t\ttransform: rotate(360deg);\n\t}\n}\n\n.loader.hour-glass {\n\tposition: relative;\n\twidth: var(--loader-width, 100px);\n\theight: var(--loader-height, 100px);\n\tbackground-color: var(--loader-color-primary, #00f);\n\t-webkit-clip-path: polygon(0% 0%, 100% 0%, 50% 50%, 100% 100%, 0% 100%, 50% 50%);\n\tclip-path: polygon(0% 0%, 100% 0%, 50% 50%, 100% 100%, 0% 100%, 50% 50%);\n\toverflow: hidden;\n\tanimation: spin var(--animation-duration, 4s) infinite ease-in-out;\n}\n\n.hour-glass:before {\n\tcontent: \"\";\n\tposition: absolute;\n\ttop: 0px;\n\tleft: 0px;\n\twidth: var(--loader-width, 100px);\n\theight: 50%;\n\tbackground-color: var(--loader-color-secondary, #eee);\n\tanimation: slide var(--animation-duration, 4s) infinite ease-in-out;\n}\n", ""]);
+
+// exports
+
+
+/***/ }),
+/* 23 */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(0)(false);
+// imports
+
+
+// module
+exports.push([module.i, "\n@keyframes momentum {\n    0%   { \n        transform: rotate(0deg);  \n    }\n    100% {\n        transform: rotate(-360deg);\n    }\n}\n\n.loader.quantum-spinner {\n    --primary-circle-offset: calc(((var(--loader-width,100px) * 0.2) / 2) - var(--line-width,4px));\n    --secondary-circle-offset: calc(((var(--loader-width,100px) * 0.4) / 2) - var(--line-width,4px)); /*- (var(--line-width,4px) * 2)*/\n    position: relative;\n    width: var(--loader-width, 100px);\n    height: var(--loader-height, 100px);\n    transform-origin: center center;\n    border-radius: 50%;\n    border: var(--line-width, 4px) solid rgba(0,0,0,0);\n    border-top-color: var(--loader-color-primary, #33f);\n    animation: momentum var(--animation-duration, 1s) linear infinite; \n}\n\n.quantum-spinner:before {\n    content: \"\";\n    position: absolute;\n    transform-origin: center center;\n    top: var(--primary-circle-offset,10px);\n    left: var(--primary-circle-offset,10px);\n    width: calc(var(--loader-width,100px) * 0.8);\n    height: calc(var(--loader-height,100px) * 0.8);\n    border-radius: 50%;\n    border: var(--line-width,4px) solid rgba(0,0,0,0);\n    border-top-color: var(--loader-color-primary, #33f);\n    opacity: 0.7;\n    filter: hue-rotate(3eg);\n    animation: momentum calc(var(--animation-duration, 1s) * 2) linear infinite; \n}\n\n.quantum-spinner:after {\n    content: \"\";\n    position: absolute;\n    top: var(--secondary-circle-offset,20px);\n    left: var(--secondary-circle-offset,20px);\n    width: calc(var(--loader-width,100px) * 0.6);\n    height: calc(var(--loader-height,100px) * 0.6);\n    border-radius: 50%;\n    transform-origin: center center;\n    border: var(--line-width,4px) solid rgba(0,0,0,0);\n    border-top-color: var(--loader-color-primary, #33f);\n    opacity: 0.3;\n    filter: hue-rotate(6eg);\n    animation: momentum var(--animation-duration, 1s) linear infinite; \n}", ""]);
+
+// exports
+
+
+/***/ }),
+/* 24 */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(0)(false);
+// imports
+
+
+// module
+exports.push([module.i, "@keyframes recursive-circle {\n    0% {\n      transform: rotate(0); \n    }\n    100% {\n      transform: rotate(360deg); \n    } \n}\n\n.loader.recursive-circle {\n    --loader-offset: calc((var(--loader-width,100px) / 4) - (var(--line-width,4px) / 2));\n    height: var(--loader-height, 100px);\n    width: var(--loader-width, 100px);\n    color: var(--loader-color-primary, #33f);\n    display: inline-block;\n    position: relative;\n    border: var(--line-width, 4px) solid;\n    border-radius: 50%;\n    border-top-color: transparent;\n    transform-origin: center center;\n    animation: recursive-circle var(--animation-duration, 1s)  linear infinite;\n}\n.loader.recursive-circle::after {\n      content: \"\";\n      height: 50%;\n      width: 50%;\n      display: block;\n      box-sizing: border-box;\n      position: absolute;\n      top: var(--loader-offset,21px);\n      left: var(--loader-offset,21px);\n      border: var(--line-width, 4px) solid;\n      transform-origin: center center;\n      border-radius: 50%;\n      border-top-color: transparent;\n      animation: recursive-circle calc(var(--animation-duration, 1s) / 2)  linear infinite reverse; \n    }\n  ", ""]);
+
+// exports
+
+
+/***/ }),
+/* 25 */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(0)(false);
+// imports
+
+
+// module
+exports.push([module.i, "@keyframes rotateplane {\n    0% {\n        transform: perspective(var(--perspective-value)) rotateX(0deg) rotateY(0deg);\n    }\n    50% {\n        transform: perspective(var(--perspective-value)) rotateX(-180.1deg) rotateY(0deg);\n    }\n    100% {\n        transform: perspective(var(--perspective-value)) rotateX(-180deg) rotateY(-179.9deg);\n    }\n}\n\n.loader.rotating-plane {\n    --perspective-value: calc(3 * var(--loader-width, 100px));\n    width: var(--loader-width, 100px);\n    height: var(--loader-height, 100px);\n    background: var(--loader-color-primary, #00f);\n    animation: rotateplane var(--animation-duration, 1s) infinite ease-in-out;\n}", ""]);
+
+// exports
+
+
+/***/ }),
+/* 26 */
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(0)(false);
@@ -696,7 +1363,7 @@ exports.push([module.i, "@keyframes circle-loader {\n    0% {\n        transform
 
 
 /***/ }),
-/* 7 */
+/* 27 */
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(0)(false);
@@ -710,7 +1377,7 @@ exports.push([module.i, "/*\nThe loaders use CSS custom properties (variables) t
 
 
 /***/ }),
-/* 8 */
+/* 28 */
 /***/ (function(module, exports) {
 
 

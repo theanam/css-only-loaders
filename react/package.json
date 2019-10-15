@@ -1,5 +1,5 @@
 {
-    "name": "css-only-loaders",
+    "name": "cssonly-loaders-react",
     "version": "1.0.13",
     "description": "React wrapper for the CSS Only Loaders project (https://github.com/theanam/css-only-loaders)",
     "main": "build/index.js",
