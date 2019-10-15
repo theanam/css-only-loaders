@@ -4,40 +4,41 @@
     "description": "React wrapper for the CSS Only Loaders project (https://github.com/theanam/css-only-loaders)",
     "main": "build/index.js",
     "peerDependencies": {
-    "react": "^16"
+        "react": "^16"
     },
     "dependencies": {
-    "react": "^16.9",
-    "webpack": "^2.6"
+        "prop-types": "^15.7.2",
+        "react": "^16.9",
+        "webpack": "^2.6"
     },
     "scripts": {
-    "watch":"browser-sync start --server --files '.'",
-    "publish-page":"gh-pages publish -d .",
-    "publish-npm":"npm publish",
-    "start": "webpack --watch",
-    "build": "webpack"
+        "watch": "browser-sync start --server --files '.'",
+        "publish-page": "gh-pages publish -d .",
+        "publish-npm": "npm publish",
+        "start": "webpack --watch",
+        "build": "webpack"
     },
     "author": {
-    "name": "Anam Ahmed",
-    "email": "anam.ahmed.a@gmail.com"
+        "name": "Anam Ahmed",
+        "email": "anam.ahmed.a@gmail.com"
     },
     "homepage": "https://github.com/theanam/css-only-loaders",
     "devDependencies": {
-    "gh-pages":"latest",
-    "browser-sync":"latest",
-    "babel-cli": "^6.24.1",
-    "babel-core": "^6.24.1",
-    "babel-loader": "^7.0.0",
-    "babel-plugin-transform-object-rest-spread": "^6.23.0",
-    "babel-plugin-transform-react-jsx": "^6.24.1",
-    "babel-preset-env": "^1.5.1",
-    "css-loader": "^1.0.1",
-    "style-loader": "^0.22.1",
-    "url-loader": "^1.1.2"
+        "babel-cli": "^6.24.1",
+        "babel-core": "^6.24.1",
+        "babel-loader": "^7.0.0",
+        "babel-plugin-transform-object-rest-spread": "^6.23.0",
+        "babel-plugin-transform-react-jsx": "^6.24.1",
+        "babel-preset-env": "^1.5.1",
+        "browser-sync": "latest",
+        "css-loader": "^1.0.1",
+        "gh-pages": "latest",
+        "style-loader": "^0.22.1",
+        "url-loader": "^1.1.2"
     },
     "license": "MIT",
     "repository": {
-    "type": "git",
-    "url": "git://github.com/theanam/css-only-loaders.git"
+        "type": "git",
+        "url": "git://github.com/theanam/css-only-loaders.git"
     }
-    }
+}
