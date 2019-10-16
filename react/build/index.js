@@ -1202,8 +1202,29 @@ __webpack_require__(10);
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function Loader(props) {
-    var type = props.type || "simple-circle";
-    return _react2.default.createElement("div", { className: "loader " + type });
+    var _props$type = props.type,
+        type = _props$type === undefined ? "simple-circle" : _props$type,
+        _props$size = props.size,
+        size = _props$size === undefined ? 70 : _props$size,
+        _props$color = props.color,
+        color = _props$color === undefined ? "#27ae60" : _props$color,
+        _props$line = props.line,
+        line = _props$line === undefined ? 3 : _props$line,
+        _props$duration = props.duration,
+        duration = _props$duration === undefined ? 2 : _props$duration;
+
+
+    return _react2.default.createElement(
+        _react2.default.Fragment,
+        null,
+        _react2.default.createElement(
+            "style",
+            null,
+            ".loader." + type,
+            "\n                    {\n                    --loader-width: " + size + "px;\n                    --loader-height: " + size + "px;\n                    --loader-color-primary: " + color + ";\n                    --loader-color-secondary: #eee;\n                    --line-width: " + line + "px;\n                    --animation-duration: " + duration + "s;\n                    --loader-initial-scale: 0.1;\n                    }"
+        ),
+        _react2.default.createElement("div", { className: "loader " + type })
+    );
 }
 
 exports.Loader = Loader;

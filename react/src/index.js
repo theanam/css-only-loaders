@@ -13,8 +13,33 @@ import "../../loaders/quantum-spinner/quantum-spinner.css";
 import "../../loaders/recursive-circle/recursive-circle.css";
 
 function Loader(props){
-    let type = props.type || "simple-circle";
-    return (<div className={`loader ${type}`}></div>);
+    let {
+        type = "simple-circle",
+        size = 70,
+        color = "#27ae60",
+        line = 3,
+        duration = 2
+    } = props;
+
+    return (
+        <React.Fragment>
+            <style>
+                {`.loader.${type}`}{
+                    `
+                    {
+                    --loader-width: ${size}px;
+                    --loader-height: ${size}px;
+                    --loader-color-primary: ${color};
+                    --loader-color-secondary: #eee;
+                    --line-width: ${line}px;
+                    --animation-duration: ${duration}s;
+                    --loader-initial-scale: 0.1;
+                    }`
+                }
+            </style>
+            <div className={`loader ${type}`}></div>
+        </React.Fragment>
+    )
 }
 
 export {Loader}
