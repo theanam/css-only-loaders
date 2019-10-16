@@ -12,7 +12,7 @@ import "../../loaders/hour-glass/hour-glass.css";
 import "../../loaders/quantum-spinner/quantum-spinner.css";
 import "../../loaders/recursive-circle/recursive-circle.css";
 
-function Loader(props){
+function StyleSheet(props){
     let {
         type = "simple-circle",
         size = 70,
@@ -20,26 +20,45 @@ function Loader(props){
         line = 3,
         duration = 2
     } = props;
-
+    return (<style>
+        {`.loader.${type}`}{
+            `
+            {
+            --loader-width: ${size}px;
+            --loader-height: ${size}px;
+            --loader-color-primary: ${color};
+            --loader-color-secondary: #eee;
+            --line-width: ${line}px;
+            --animation-duration: ${duration}s;
+            --loader-initial-scale: 0.1;
+            }`
+        }
+    </style>);
+}
+function Loader(props){
+    let {type = "simple-circle"} = props;  
     return (
         <React.Fragment>
-            <style>
-                {`.loader.${type}`}{
-                    `
-                    {
-                    --loader-width: ${size}px;
-                    --loader-height: ${size}px;
-                    --loader-color-primary: ${color};
-                    --loader-color-secondary: #eee;
-                    --line-width: ${line}px;
-                    --animation-duration: ${duration}s;
-                    --loader-initial-scale: 0.1;
-                    }`
-                }
-            </style>
+            <StyleSheet {...props}/>
             <div className={`loader ${type}`}></div>
         </React.Fragment>
-    )
+    );
 }
 
-export {Loader}
+function FullLoader(props){
+    const {backgroundColor = `rgba(0,0,0,0.4)`} ={props};
+    return (<div style={{...fullLoaderStyle,backgroundColor}}>
+        <Loader {...props}/>
+    </div>);
+}
+
+const fullLoaderStyle = {
+    width: '100%',
+    height: '100%',
+    flex: 1,
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center'
+}
+
+export {Loader,FullLoader}

@@ -1169,7 +1169,9 @@ module.exports = require("react");
 Object.defineProperty(exports, "__esModule", {
     value: true
 });
-exports.Loader = undefined;
+exports.FullLoader = exports.Loader = undefined;
+
+var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
 
 var _react = __webpack_require__(14);
 
@@ -1201,7 +1203,7 @@ __webpack_require__(10);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-function Loader(props) {
+function StyleSheet(props) {
     var _props$type = props.type,
         type = _props$type === undefined ? "simple-circle" : _props$type,
         _props$size = props.size,
@@ -1213,21 +1215,48 @@ function Loader(props) {
         _props$duration = props.duration,
         duration = _props$duration === undefined ? 2 : _props$duration;
 
+    return _react2.default.createElement(
+        "style",
+        null,
+        ".loader." + type,
+        "\n            {\n            --loader-width: " + size + "px;\n            --loader-height: " + size + "px;\n            --loader-color-primary: " + color + ";\n            --loader-color-secondary: #eee;\n            --line-width: " + line + "px;\n            --animation-duration: " + duration + "s;\n            --loader-initial-scale: 0.1;\n            }"
+    );
+}
+function Loader(props) {
+    var _props$type2 = props.type,
+        type = _props$type2 === undefined ? "simple-circle" : _props$type2;
 
     return _react2.default.createElement(
         _react2.default.Fragment,
         null,
-        _react2.default.createElement(
-            "style",
-            null,
-            ".loader." + type,
-            "\n                    {\n                    --loader-width: " + size + "px;\n                    --loader-height: " + size + "px;\n                    --loader-color-primary: " + color + ";\n                    --loader-color-secondary: #eee;\n                    --line-width: " + line + "px;\n                    --animation-duration: " + duration + "s;\n                    --loader-initial-scale: 0.1;\n                    }"
-        ),
+        _react2.default.createElement(StyleSheet, props),
         _react2.default.createElement("div", { className: "loader " + type })
     );
 }
 
+function FullLoader(props) {
+    var _props = { props: props },
+        _props$backgroundColo = _props.backgroundColor,
+        backgroundColor = _props$backgroundColo === undefined ? "rgba(0,0,0,0.4)" : _props$backgroundColo;
+
+    return _react2.default.createElement(
+        "div",
+        { style: _extends({}, fullLoaderStyle, { backgroundColor: backgroundColor }) },
+        _react2.default.createElement(Loader, props)
+    );
+}
+
+var fullLoaderStyle = {
+    width: '100%',
+    height: '100%',
+    flex: 1,
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center'
+};
+
 exports.Loader = Loader;
+exports.FullLoader = FullLoader;
 
 /***/ }),
 /* 16 */
