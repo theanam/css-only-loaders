@@ -47,7 +47,7 @@ It should render the `simple circle` loader with all the default color and attri
 | type |String| `simple-circle` | ALL | Type of loader available. See table of loaders below |
 | size |Number| 70 | ALL | Loader size in pixels |
 | color |String| `#27ae60` | ALL | The color for the loader | 
-| secondaryColor | `#eeeeee` | ALL | The secondary color for the loader |
+| secondaryColor| String | `#eeeeee` | ALL | The secondary color for the loader |
 | backgroundColor |String| `rgba(0,0,0,0.4)` | `<FullLoader/>` | The backdrop color for the full size loader. use a `rgba` color for better effect.|
 | line |Number| 3 | ALL | Line width for the loaders that features line this unit is in pixels. No need to include `px`. just use a number |
 | duration |Number| 2 | ALL | Animation duration in seconds|
