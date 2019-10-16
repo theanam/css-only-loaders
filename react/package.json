@@ -7,13 +7,12 @@
         "react": "^16"
     },
     "dependencies": {
-        "prop-types": "^15.7.2",
-        "react": "^16.9",
+        "react": "^16.10",
         "webpack": "^2.6"
     },
     "scripts": {
-        "watch": "browser-sync start --server --files '.'",
-        "publish-page": "gh-pages publish -d .",
+        "watch": "browser-sync start --server --files '..'",
+        "publish-page": "gh-pages publish -d ..",
         "publish-npm": "npm publish",
         "start": "webpack --watch",
         "build": "webpack"
@@ -32,9 +31,7 @@
         "babel-preset-env": "^1.5.1",
         "browser-sync": "latest",
         "css-loader": "^1.0.1",
-        "gh-pages": "latest",
-        "style-loader": "^0.22.1",
-        "url-loader": "^1.1.2"
+        "style-loader": "^0.22.1"
     },
     "license": "MIT",
     "repository": {
