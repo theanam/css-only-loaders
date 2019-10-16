@@ -17,6 +17,7 @@ function StyleSheet(props){
         type = "simple-circle",
         size = 70,
         color = "#27ae60",
+        secondaryColor="#eee",
         line = 3,
         duration = 2
     } = props;
@@ -27,7 +28,7 @@ function StyleSheet(props){
             --loader-width: ${size}px;
             --loader-height: ${size}px;
             --loader-color-primary: ${color};
-            --loader-color-secondary: #eee;
+            --loader-color-secondary: ${secondaryColor};
             --line-width: ${line}px;
             --animation-duration: ${duration}s;
             --loader-initial-scale: 0.1;
