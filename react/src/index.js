@@ -59,7 +59,11 @@ const fullLoaderStyle = {
     flex: 1,
     display: 'flex',
     alignItems: 'center',
-    justifyContent: 'center'
+    justifyContent: 'center',
+    position: 'absolute',
+    left: 0,
+    top: 0,
+    zIndex: 40000
 }
 
 export {Loader,FullLoader}

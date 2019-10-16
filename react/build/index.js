@@ -1210,6 +1210,8 @@ function StyleSheet(props) {
         size = _props$size === undefined ? 70 : _props$size,
         _props$color = props.color,
         color = _props$color === undefined ? "#27ae60" : _props$color,
+        _props$secondaryColor = props.secondaryColor,
+        secondaryColor = _props$secondaryColor === undefined ? "#eee" : _props$secondaryColor,
         _props$line = props.line,
         line = _props$line === undefined ? 3 : _props$line,
         _props$duration = props.duration,
@@ -1219,7 +1221,7 @@ function StyleSheet(props) {
         "style",
         null,
         ".loader." + type,
-        "\n            {\n            --loader-width: " + size + "px;\n            --loader-height: " + size + "px;\n            --loader-color-primary: " + color + ";\n            --loader-color-secondary: #eee;\n            --line-width: " + line + "px;\n            --animation-duration: " + duration + "s;\n            --loader-initial-scale: 0.1;\n            }"
+        "\n            {\n            --loader-width: " + size + "px;\n            --loader-height: " + size + "px;\n            --loader-color-primary: " + color + ";\n            --loader-color-secondary: " + secondaryColor + ";\n            --line-width: " + line + "px;\n            --animation-duration: " + duration + "s;\n            --loader-initial-scale: 0.1;\n            }"
     );
 }
 function Loader(props) {

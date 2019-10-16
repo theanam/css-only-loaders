@@ -2,4 +2,8 @@
 
 #### How to use
 
-Download the component, 
+Download the module with npm (or yarn)
+
+    yarn add cssonly-loaders-react
+
+The module come with two component, 
