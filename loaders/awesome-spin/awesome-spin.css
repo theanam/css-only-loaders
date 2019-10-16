@@ -1,0 +1,14 @@
+.loader.awesome-spin {
+    border-radius: 50%;
+    color: var(--loader-color-primary, #33f);
+    border-top: var(--line-width, 10px) solid;
+    border-bottom: var(--line-width, 10px) solid;
+    width: var(--loader-width, 100px);
+    height: var(--loader-height, 100px);
+    animation: awesome-spin var(--animation-duration, 2s)  linear infinite;
+  }
+  
+  @keyframes awesome-spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
