@@ -1,0 +1,143 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+:root{
+    --side-margin: 60px;
+    --primary-blue: #2980b9;
+}
+body{
+	font-family: sans-serif;
+}
+.header{
+    box-sizing: border-box;
+    padding: 40px var(--side-margin, 60px);
+}
+.logo{
+    height: 50px;
+}
+.badges{
+    margin-top: 1em;
+}
+.instruction{
+    padding: 0.2em 0.5em;
+    display: inline-block;
+    background: #222;
+    color: #fff;
+    border-radius: 0.2em;
+    margin-top: 1em;
+}
+.usage-instructions{
+    margin-top: 1em;
+    font-size: 0.9em;
+    color: #333;
+}
+.container{
+	padding:10px;
+}
+.footer{
+    padding: 40px var(--side-margin, 60px);
+}
+.loader{
+	display: inline-block;
+	margin: var(--side-margin,60px);
+	cursor: pointer;
+	background: #fff;
+}
+.loaders{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+.sourceholder{
+	width:100%;
+	height:100%;
+	left:0px;
+	top:0px;
+	position: fixed;
+	background: rgba(0,0,0,0.5);
+	display: none;
+	z-index: 10000;
+	align-items: center;
+	justify-content: center;
+}	
+.source{
+	width:80vw;
+	height:80vh;
+	background-color: var(--primary-blue,#2980b9);
+	padding:20px;
+	z-index: 30000;
+	border-radius:4px;
+	display: flex;
+	flex-direction: column;
+	overflow:hidden;
+	z-index:10000;
+}
+.source div{
+	color: white;
+	padding: 5px;
+}
+textarea.html-code{
+    height: 1.1em;
+}
+.copy{
+    display: inline-block;
+    padding: 0.1em 0.2em;
+    border: 1px solid white;
+    border-radius: 0.2em;
+    background: #fff;
+    color: var(--primary-blue, #2980b9);
+    margin-left: 0.5em;
+    cursor: pointer;
+}
+textarea.html-code,textarea.actual-code{
+	background: #222;
+	display: block;
+	overflow: scroll;
+	color: #fff;
+	padding: 10px;
+	border-radius: 3px;
+	font-size: 12px;
+    margin: 0;
+    border: none;
+}
+textarea.actual-code{
+    flex: 1;
+}
+.controls{
+	position: fixed;
+	right: 0px;
+	padding: 10px;
+	top: 0px;
+	background: #fff;
+	z-index: 4000;
+}
+.control{
+	display: flex;
+	height: 1.3em;
+	padding: 0.3em;
+	align-items: center;
+}
+.control:nth-child(2n){
+	background-color: #eee;
+}
+.control span{
+	flex: 1;
+}
+.internalloader{
+	--animation-duration: 1s;
+	background: transparent !important;
+	pointer-events: none;
+}
+.loadingindicator{
+	display: none;
+	position: fixed;
+	top:0px;
+	left:0px;
+	background: rgba(0,0,0,0.5);
+	width: 100%;
+	height: 100%;
+	z-index: 30000;
+	align-items: center;
+	justify-content: center;
+}

@@ -1,0 +1,28 @@
+@keyframes colorpulse {
+  0% {
+    filter: hue-rotate(0deg);
+  }
+  100% {
+    filter: hue-rotate(359.9deg);
+  }
+}
+
+@keyframes pulse {
+  0%, 1% {
+    opacity: 1;
+    transform: scale(0.1);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(1);
+  }
+}
+
+.loader.color-pulse-ball {
+  width: var(--loader-width, 100px);
+  height: var(--loader-height, 100px);
+  border-radius: 50%;
+  background-color: var(--loader-color-primary, #00f);
+  animation: colorpulse calc(3 * var(--animation-duration,1s)) infinite ease-in-out,
+    pulse var(--animation-duration,1s) infinite ease;
+}
