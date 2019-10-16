@@ -17,7 +17,7 @@ function StyleSheet(props){
         type = "simple-circle",
         size = 70,
         color = "#27ae60",
-        secondaryColor="#eee",
+        secondaryColor="#eeeeee",
         line = 3,
         duration = 2
     } = props;
