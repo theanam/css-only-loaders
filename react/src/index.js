@@ -37,7 +37,8 @@ function StyleSheet(props){
     </style>);
 }
 function Loader(props){
-    let {type = "simple-circle"} = props;  
+    let {type = "simple-circle", visible = true} = props;  
+    if(!visible) return null;
     return (
         <React.Fragment>
             <StyleSheet {...props}/>
@@ -47,7 +48,8 @@ function Loader(props){
 }
 
 function FullLoader(props){
-    const {backgroundColor = `rgba(0,0,0,0.4)`} ={props};
+    const {backgroundColor = `rgba(0,0,0,0.4)`, visible = true } ={props};
+    if(!visible) return null;
     return (<div style={{...fullLoaderStyle,backgroundColor}}>
         <Loader {...props}/>
     </div>);
@@ -66,4 +68,7 @@ const fullLoaderStyle = {
     zIndex: 40000
 }
 
-export {Loader,FullLoader}
+export {
+    Loader as default,
+    FullLoader
+}

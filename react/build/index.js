@@ -1169,7 +1169,7 @@ module.exports = require("react");
 Object.defineProperty(exports, "__esModule", {
     value: true
 });
-exports.FullLoader = exports.Loader = undefined;
+exports.FullLoader = exports.default = undefined;
 
 var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
 
@@ -1226,8 +1226,11 @@ function StyleSheet(props) {
 }
 function Loader(props) {
     var _props$type2 = props.type,
-        type = _props$type2 === undefined ? "simple-circle" : _props$type2;
+        type = _props$type2 === undefined ? "simple-circle" : _props$type2,
+        _props$visible = props.visible,
+        visible = _props$visible === undefined ? true : _props$visible;
 
+    if (!visible) return null;
     return _react2.default.createElement(
         _react2.default.Fragment,
         null,
@@ -1239,8 +1242,11 @@ function Loader(props) {
 function FullLoader(props) {
     var _props = { props: props },
         _props$backgroundColo = _props.backgroundColor,
-        backgroundColor = _props$backgroundColo === undefined ? "rgba(0,0,0,0.4)" : _props$backgroundColo;
+        backgroundColor = _props$backgroundColo === undefined ? "rgba(0,0,0,0.4)" : _props$backgroundColo,
+        _props$visible2 = _props.visible,
+        visible = _props$visible2 === undefined ? true : _props$visible2;
 
+    if (!visible) return null;
     return _react2.default.createElement(
         "div",
         { style: _extends({}, fullLoaderStyle, { backgroundColor: backgroundColor }) },
@@ -1254,10 +1260,14 @@ var fullLoaderStyle = {
     flex: 1,
     display: 'flex',
     alignItems: 'center',
-    justifyContent: 'center'
+    justifyContent: 'center',
+    position: 'absolute',
+    left: 0,
+    top: 0,
+    zIndex: 40000
 };
 
-exports.Loader = Loader;
+exports.default = Loader;
 exports.FullLoader = FullLoader;
 
 /***/ }),
