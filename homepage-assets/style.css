@@ -90,6 +90,10 @@ textarea.html-code{
     margin-left: 0.5em;
     cursor: pointer;
 }
+.copy.rmargin{
+    margin-left:0;
+    margin-right: 0.5em;
+}
 textarea.html-code,textarea.actual-code{
     font-family: monospace;
 	background: #222;
@@ -101,16 +105,24 @@ textarea.html-code,textarea.actual-code{
 	font-size: 12px;
     margin: 0;
     border: none;
+    pointer-events: none;
 }
 textarea.actual-code{
     flex: 1;
 }
+.mainnameholder{
+    display: flex;
+    align-items: center;
+}
 .current-loader-name{
-    color: #222;
+    display: block;
+    color: #fff;
     font-family: monospace;
     font-size: 2em;
-    margin-bottom: 0.6em;
-    flex:0;
+    /* margin-bottom: 0.6em; */
+    background-color: transparent;
+    border: 0;
+    pointer-events: none;
 }
 .controls{
 	position: fixed;
