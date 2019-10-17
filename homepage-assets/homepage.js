@@ -44,8 +44,9 @@ function getDefination(cssClass,callback){
 
 function prepareSourceCode(data,defName){
 	$(".sourceholder").css("display","flex");
-	$(".html-code").text(`<div class="loader ${defName}"></div>`);
-	$(".actual-code").text(getBaseCSS() + "\n\n" + data);
+    $(".html-code").text(`<div class="loader ${defName}"></div>`);
+    $(".actual-code").text(getBaseCSS() + "\n\n" + data);
+    $(".current-loader-name").val(defName);
 }
 
 $(".loader").on("click",function(e){
