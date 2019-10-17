@@ -1,6 +1,6 @@
 {
     "name": "cssonly-loaders-react",
-    "version": "1.0.13",
+    "version": "0.1",
     "description": "React wrapper for the CSS Only Loaders project (https://github.com/theanam/css-only-loaders)",
     "main": "build/index.js",
     "peerDependencies": {
@@ -11,8 +11,6 @@
         "webpack": "^2.6"
     },
     "scripts": {
-        "watch": "browser-sync start --server --files '..'",
-        "publish-page": "gh-pages publish -d ..",
         "publish-npm": "npm publish",
         "start": "webpack --watch",
         "build": "webpack"
@@ -22,6 +20,7 @@
         "email": "anam.ahmed.a@gmail.com"
     },
     "homepage": "https://github.com/theanam/css-only-loaders",
+    "keywords": ["css","loaders","css only","react","loader","spinner","loading animation"],
     "devDependencies": {
         "babel-cli": "^6.24.1",
         "babel-core": "^6.24.1",

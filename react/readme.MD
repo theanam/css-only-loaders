@@ -1,5 +1,7 @@
 ## React component for the CSS only loader project
 
+React wrapper for the [CSS Only loaders](https://github.com/theanam/css-only-loaders) project.
+
 #### How to use
 
 Download the module with npm (or yarn)
@@ -51,5 +53,26 @@ It should render the `simple circle` loader with all the default color and attri
 | backgroundColor |String| `rgba(0,0,0,0.4)` | `<FullLoader/>` | The backdrop color for the full size loader. use a `rgba` color for better effect.|
 | line |Number| 3 | ALL | Line width for the loaders that features line this unit is in pixels. No need to include `px`. just use a number |
 | duration |Number| 2 | ALL | Animation duration in seconds|
-| visible | Boolean | true | ALL | Determine if the loader will be visible or not. Takes the extra pain away for implementing any show-hide logic.
+| visible | Boolean | true | ALL | Determine if the loader will be visible or not. Takes the extra pain away for implementing any show-hide logic.|
 
+
+#### Available Loaders
+
+All the loaders from the main project is available in the component:
+
+| Loader Name | 
+| ----------- |
+| simple-circle |
+| rotating-plane |
+| awesome-spin |
+| blasting-circle |
+| box-rotation | 
+| clock |
+| color-pulse-ball |
+| double-circle |
+| hour-glass |
+| quantum-spinner |
+|recursive-circle | 
+
+
+> Any new loader added to the project will be added to the component as well.

@@ -91,6 +91,7 @@ textarea.html-code{
     cursor: pointer;
 }
 textarea.html-code,textarea.actual-code{
+    font-family: monospace;
 	background: #222;
 	display: block;
 	overflow: scroll;
@@ -103,6 +104,13 @@ textarea.html-code,textarea.actual-code{
 }
 textarea.actual-code{
     flex: 1;
+}
+.current-loader-name{
+    color: #222;
+    font-family: monospace;
+    font-size: 2em;
+    margin-bottom: 0.6em;
+    flex:0;
 }
 .controls{
 	position: fixed;
