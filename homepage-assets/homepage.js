@@ -94,10 +94,15 @@ $(".copy").on("click",function(){
     let targetEl = $(`.${target}`);
     targetEl.select();
     document.execCommand("copy");
-})
+});
+
 $(function(){
     $(".lcolor").html(color);
     $(".ldur").html(dur);
     $(".lline").html(line);
     $(".lsize").html(size);
+    $.each($(".loader"),function(idx,item){
+        let _cls = $(item).attr("class").split(" ")[1];
+        $(item).attr("title",_cls);
+    })
 });
