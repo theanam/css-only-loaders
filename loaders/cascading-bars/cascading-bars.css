@@ -3,13 +3,13 @@
     0%,
     80%,
     100% {
-        transform: translateY(0);
-        box-shadow: 0 0 var(--loader-color-primary);
+        /* transform: translateY(0); */
+        transform: scaleY(1);
     }
 
     40% {
-        transform: translateY(calc(var(--loader-height) * 0.125));
-        box-shadow: 0 calc(var(--loader-height) * -0.25) var(--loader-color-primary);
+        /* transform: translateY(calc(var(--loader-height) * 0.125)); */
+        transform: scaleY(1.2);
     }
 }
 
