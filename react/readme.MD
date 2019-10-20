@@ -2,6 +2,8 @@
 
 React wrapper for the [CSS Only loaders](https://github.com/theanam/css-only-loaders) project.
 
+![CSS Only Loaders](https://raw.githubusercontent.com/theanam/css-only-loaders/master/homepage-assets/preview.gif)
+
 #### How to use
 
 Download the module with npm (or yarn)
@@ -16,7 +18,7 @@ to use only the loader, component, without any wrapper or anything, use the samp
 
     function App(props){
         return (
-            <Loader>
+            <Loader/>
         )
     }
 ```
@@ -34,7 +36,7 @@ Here's a barebone sample code:
 
     function App(props){
         return (
-            <FullLoader>
+            <FullLoader/>
         )
     }
 ```

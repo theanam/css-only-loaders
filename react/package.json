@@ -1,6 +1,6 @@
 {
     "name": "cssonly-loaders-react",
-    "version": "0.0.1",
+    "version": "0.0.4",
     "description": "React wrapper for the CSS Only Loaders project (https://github.com/theanam/css-only-loaders)",
     "main": "build/index.js",
     "peerDependencies": {
@@ -28,7 +28,6 @@
         "babel-plugin-transform-object-rest-spread": "^6.23.0",
         "babel-plugin-transform-react-jsx": "^6.24.1",
         "babel-preset-env": "^1.5.1",
-        "browser-sync": "latest",
         "css-loader": "^1.0.1",
         "style-loader": "^0.22.1"
     },
