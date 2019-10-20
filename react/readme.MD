@@ -75,6 +75,6 @@ All the loaders from the main project is available in the component:
 | hour-glass |
 | quantum-spinner |
 |recursive-circle | 
-
+| block-spin |
 
 > Any new loader added to the project will be added to the component as well.
