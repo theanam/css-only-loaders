@@ -21,6 +21,14 @@ loaders made with pure CSS and zero bulk. Will be converted to a react component
 
 * Please make sure the folder name in the `loaders` folder, the css file name and the class name is the same. This is **Important** for the automatic defination loading to work.
 
+* If you want your loader to be added to the react component as well, add the referenece to the CSS file to the `react/src/index.js` file. As the files are placed two folder above use a format like this: `import "../../loaders/simple-circle/simple-circle.css";`. Should be enough to include it to the react component once a new version is released on npm.
+
+
+#### Seeking help for: 
+
+* Vue component 
+* Angular Component
+* New loader Ideas
 
 The Loader icon on the logo is taken from [Icofont](icofont.com)
  
