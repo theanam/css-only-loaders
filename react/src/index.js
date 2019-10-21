@@ -13,6 +13,7 @@ import "../../loaders/quantum-spinner/quantum-spinner.css";
 import "../../loaders/recursive-circle/recursive-circle.css";
 import "../../loaders/awesome-spin/awesome-spin.css";
 import "../../loaders/block-spin/block-spin.css";
+import "../../loaders/cascading-bars/cascading-bars.css";
 function StyleSheet(props){
     let {
         type = "simple-circle",

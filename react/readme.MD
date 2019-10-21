@@ -76,5 +76,6 @@ All the loaders from the main project is available in the component:
 | quantum-spinner |
 |recursive-circle | 
 | block-spin |
+| cascading-bars |
 
 > Any new loader added to the project will be added to the component as well.
