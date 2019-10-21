@@ -1,14 +1,10 @@
 {
     "name": "cssonly-loaders-react",
-    "version": "0.0.4",
+    "version": "0.0.8",
     "description": "React wrapper for the CSS Only Loaders project (https://github.com/theanam/css-only-loaders)",
     "main": "build/index.js",
     "peerDependencies": {
         "react": "^16"
-    },
-    "dependencies": {
-        "react": "^16.10",
-        "webpack": "^2.6"
     },
     "scripts": {
         "publish-npm": "npm publish",
@@ -29,7 +25,9 @@
         "babel-plugin-transform-react-jsx": "^6.24.1",
         "babel-preset-env": "^1.5.1",
         "css-loader": "^1.0.1",
-        "style-loader": "^0.22.1"
+        "style-loader": "^0.22.1",
+        "react": "^16.10",
+        "webpack": "^2.6"
     },
     "license": "MIT",
     "repository": {
